@@ -63,34 +63,34 @@ History & Comparison Tracking
 ## Project Screenshots
 
 ### Login Page
-![Login](screenshots/01_login_page.png)
+![Login](screenshots/login_page.png)
 
 ### Register Page
-![Register](screenshots/02_register_page.png)
+![Register](screenshots/register_page.png)
 
 ### Dashboard
-![Dashboard](screenshots/03_dashboard_upload_page.png)
+![Dashboard](screenshots/dashboard_upload_page.png)
 
 ### Resume Preview
-![Preview](screenshots/04_resume_preview_page.png)
+![Preview](screenshots/resume_preview_page.png)
 
 ### Skills Match Analysis
-![Skills Match](screenshots/05_skills_match_analysis.png)
+![Skills Match](screenshots/skills_match_analysis.png)
 
 ### ATS Score and Missing Skills
-![ATS Score](screenshots/06_ats_score_missing_skills.png)
+![ATS Score](screenshots/ats_score_missing_skills.png)
 
 ### Recommended Roles
-![Recommended Roles](screenshots/07_job_recommendations.png)
+![Recommended Roles](screenshots/job_recommendations.png)
 
 ### Resume Improvement Tracker
-![Resume Tracker](screenshots/08_resume_improvement_tracker.png)
-
-### Upload History
-![Upload History](screenshots/09_upload_history.png)
+![Resume Tracker](screenshots/resume_improvement_tracker.png)
 
 ### Career Roadmap
-![Career Roadmap](screenshots/10_career_roadmap.png)
+![Career Roadmap](screenshots/career_roadmap.png)
+
+### Upload History
+![Upload History](screenshots/upload_history.png)
 
 ---
 
@@ -216,5 +216,11 @@ http://localhost:5173
 ## Author
 
 **Mohammed Salman**
+
+B.Tech Computer Science Engineering
+
+- 🌐 GitHub: [MohammedSalman7](https://github.com/MohammedSalman7)
+- 🚀 Live Demo: [AI Resume Analyzer](YOUR_LIVE_DEMO_LINK_HERE)
+- 📂 Repository: [AI-Resume-Analyzer](https://github.com/MohammedSalman7/AI-Resume-Analyzer)
 
 Built using React, Flask, SQLite, and Tailwind CSS.
