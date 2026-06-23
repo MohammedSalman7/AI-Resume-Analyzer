@@ -1,10 +1,13 @@
 import axios from "axios";
 
+const API =
+  import.meta.env.VITE_API_URL;
+
 export const downloadReport = async (
   analysis
 ) => {
   return axios.post(
-    "http://127.0.0.1:5000/report/download",
+    `${API}/report/download`,
     analysis,
     {
       responseType: "blob",
