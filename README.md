@@ -1,4 +1,4 @@
-# AI Resume Analyzer and ATS Optimization System
+# AI Resume Analyzer 
 
 An AI-powered full-stack web application that analyzes resumes, calculates ATS scores, identifies missing skills, recommends suitable job roles, generates career roadmaps, and tracks resume improvements over time.
 
