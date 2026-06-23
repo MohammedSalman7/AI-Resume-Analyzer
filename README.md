@@ -217,7 +217,7 @@ http://localhost:5173
 
 **Mohammed Salman**  
 
-- 🌐 Live Demo: https://ai-resume-analyzer-eight-livid.vercel.app/login
+- 🌐 Live Demo: https://ai-resume-analyzer-eight-livid.vercel.app/
 - ⚙️ Backend API: https://ai-resume-analyzer-egza.onrender.com
 - 💻 GitHub: https://github.com/MohammedSalman7
 
