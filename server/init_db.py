@@ -2,6 +2,8 @@ from database import get_db_connection
 
 
 def init_db():
+    print("Initializing database...")
+
     conn = get_db_connection()
     cursor = conn.cursor()
 
@@ -38,3 +40,5 @@ def init_db():
 
     conn.commit()
     conn.close()
+
+    print("Database tables created successfully.")
