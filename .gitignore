@@ -1,0 +1,45 @@
+# =========================
+# Python
+# =========================
+server/venv/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files
+.env
+
+# =========================
+# Database
+# =========================
+*.db
+*.sqlite3
+
+# =========================
+# Uploaded resumes
+# =========================
+server/uploads/resumes/*
+!server/uploads/resumes/.gitkeep
+
+# =========================
+# Node.js
+# =========================
+client/node_modules/
+
+# Build folders
+client/dist/
+build/
+dist/
+
+# =========================
+# IDE files
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
