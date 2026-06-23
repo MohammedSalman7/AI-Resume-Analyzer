@@ -215,12 +215,10 @@ http://localhost:5173
 
 ## Author
 
-**Mohammed Salman**
+**Mohammed Salman**  
 
-B.Tech Computer Science Engineering
+- 🌐 Live Demo: https://ai-resume-analyzer-eight-livid.vercel.app/login
+- ⚙️ Backend API: https://ai-resume-analyzer-egza.onrender.com
+- 💻 GitHub: https://github.com/MohammedSalman7
 
-- 🌐 GitHub: [MohammedSalman7](https://github.com/MohammedSalman7)
-- 🚀 Live Demo: [AI Resume Analyzer](YOUR_LIVE_DEMO_LINK_HERE)
-- 📂 Repository: [AI-Resume-Analyzer](https://github.com/MohammedSalman7/AI-Resume-Analyzer)
-
-Built using React, Flask, SQLite, and Tailwind CSS.
+Built with React.js, Flask, SQLite3, and Tailwind CSS.
