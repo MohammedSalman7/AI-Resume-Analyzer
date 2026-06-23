@@ -12,6 +12,11 @@ DB_PATH = os.path.join(
 
 
 def get_db_connection():
+    # Ensure directory exists
+    os.makedirs(
+        os.path.dirname(DB_PATH),
+        exist_ok=True
+    )
 
     conn = sqlite3.connect(
         DB_PATH

@@ -1,58 +1,40 @@
-import sqlite3
-import os
+from database import get_db_connection
 
-BASE_DIR = os.path.dirname(
-    os.path.abspath(__file__)
-)
 
-DB_PATH = os.path.join(
-    BASE_DIR,
-    "resume_analyzer.db"
-)
+def init_db():
+    conn = get_db_connection()
+    cursor = conn.cursor()
 
-conn = sqlite3.connect(
-    DB_PATH
-)
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        email TEXT UNIQUE NOT NULL,
+        password TEXT NOT NULL
+    )
+    """)
 
-cursor = conn.cursor()
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS upload_history (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        email TEXT NOT NULL,
+        filename TEXT NOT NULL,
+        role TEXT NOT NULL,
+        ats_score REAL,
+        uploaded_at TEXT
+    )
+    """)
 
-# Users Table
-cursor.execute("""
-CREATE TABLE IF NOT EXISTS users (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    email TEXT UNIQUE NOT NULL,
-    password TEXT NOT NULL
-)
-""")
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS resume_comparisons (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        email TEXT NOT NULL,
+        filename TEXT NOT NULL,
+        ats_score REAL,
+        skills TEXT,
+        uploaded_at TEXT
+    )
+    """)
 
-# Upload History Table
-cursor.execute("""
-CREATE TABLE IF NOT EXISTS upload_history (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    email TEXT NOT NULL,
-    filename TEXT NOT NULL,
-    role TEXT NOT NULL,
-    ats_score REAL,
-    uploaded_at TEXT
-)
-""")
-
-# Resume Comparison Table
-cursor.execute("""
-CREATE TABLE IF NOT EXISTS resume_comparisons (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    email TEXT NOT NULL,
-    filename TEXT NOT NULL,
-    ats_score REAL,
-    skills TEXT,
-    uploaded_at TEXT
-)
-""")
-
-conn.commit()
-conn.close()
-
-print(
-    "Database Created Successfully!"
-)
+    conn.commit()
+    conn.close()
