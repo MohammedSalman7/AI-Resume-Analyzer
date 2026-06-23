@@ -1,12 +1,17 @@
-from database import get_db_connection
+from database import (
+    get_db_connection,
+    DB_PATH
+)
 
 
 def init_db():
+    print(f"Database path: {DB_PATH}")
     print("Initializing database...")
 
     conn = get_db_connection()
     cursor = conn.cursor()
 
+    # Users Table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -16,6 +21,7 @@ def init_db():
     )
     """)
 
+    # Upload History Table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS upload_history (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -27,6 +33,7 @@ def init_db():
     )
     """)
 
+    # Resume Comparison Table
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS resume_comparisons (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
